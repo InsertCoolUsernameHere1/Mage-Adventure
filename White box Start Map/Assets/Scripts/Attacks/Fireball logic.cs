@@ -4,6 +4,7 @@ public class Fireballlogic : MonoBehaviour
 {
     public Rigidbody rb;
     public int speed = 25;
+    public int damage = 50;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
