@@ -14,7 +14,7 @@ public class Fireballlogic : MonoBehaviour
     void Start()
     {
         //Destroy(objectToDestroy);
-        Invoke("FunctionToDestroy", 5f);
+        Invoke("FunctionToDestroy", 3f);
 
     }
 

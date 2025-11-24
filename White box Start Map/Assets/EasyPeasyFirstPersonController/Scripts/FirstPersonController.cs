@@ -262,6 +262,8 @@ namespace EasyPeasyFirstPersonController
             {
                 moveDirection = new Vector3(moveVector.x, moveDirection.y, moveVector.z);
                 characterController.Move(moveDirection * Time.deltaTime);
+
+
             }
         }
 
