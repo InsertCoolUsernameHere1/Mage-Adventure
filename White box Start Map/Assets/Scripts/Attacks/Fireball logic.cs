@@ -1,12 +1,15 @@
 using System.Collections;
 using UnityEngine;
+using System.Collections.Generic;
+using UnityEditor.Callbacks;
+
 
 public class Fireballlogic : MonoBehaviour
 {
     public GameObject objectToDestroy;
     public Rigidbody rb;
     public int speed = 25;
-    public int damage = 50;
+    public EnemyLogic EnemyL;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -32,6 +35,14 @@ public class Fireballlogic : MonoBehaviour
         Destroy(objectToDestroy);
     }
 
-
+    private void OnCollisionEnter(Collision other)
+    {
+        if (other.gameObject.tag == "Enemy")
+        {
+            EnemyL = other.gameObject.GetComponent<EnemyLogic>();
+            EnemyL.health = EnemyL.health - 1;
+            Destroy(gameObject);
+        }
+    }
 }
 

@@ -285,7 +285,7 @@ namespace EasyPeasyFirstPersonController
         {
             Cursor.lockState = newVisibility ? CursorLockMode.None : CursorLockMode.Locked;
             Cursor.visible = newVisibility;
-        }
+        }   
 
     }
 }
