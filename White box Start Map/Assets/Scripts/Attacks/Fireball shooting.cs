@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Fireballshooting : MonoBehaviour
 {
-    public GameObject fireball;
+    public GameObject Fireball;
     public GameObject fireballSpawnPoint;
     private bool shootFireball = false;
     private float delay = 0;
@@ -25,7 +25,7 @@ public class Fireballshooting : MonoBehaviour
             {
                 if (shootFireball == true)
                 {
-                    Instantiate(fireball, fireballSpawnPoint.transform.position, fireballSpawnPoint.transform.rotation);
+                    GameObject gameObject1 = Instantiate(Fireball, fireballSpawnPoint.transform.position, fireballSpawnPoint.transform.rotation);
                     delay = 0.5f;
                     shootFireball = false;
 
