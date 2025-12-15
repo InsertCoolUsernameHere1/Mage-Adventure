@@ -14,6 +14,7 @@ public class NPCDialogue : MonoBehaviour
         if (player_detection && Input.GetKeyDown(KeyCode.E))
         {
             print("ELLLO THERE MATE");
+            // if this doesnt work then the NPC is really mean >:(
         } 
     }
 

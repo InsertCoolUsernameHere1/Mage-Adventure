@@ -27,7 +27,7 @@ public class Spawner : MonoBehaviour
             {
                 delay = delay * Time.deltaTime;
             }
-            else
+            else // whoever reads this is a really cool guy :) 
             {
                 selectRandomSpawnPoint();
                 currentSpawns = currentSpawns + 1;

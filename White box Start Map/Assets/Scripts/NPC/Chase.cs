@@ -61,6 +61,7 @@ public class Chaser : MonoBehaviour
 
         if (bulletTime > 0) return;
         bulletTime = timer;
+        // HUH?????? ig this could work
         GameObject bulletObj = Instantiate(EnemyFireball, spawnPoint.transform.position, spawnPoint.transform.rotation);
         Rigidbody bulletRig = bulletObj.GetComponent<Rigidbody>();
         bulletRig.AddForce(bulletRig.transform.forward * enemySpeed);

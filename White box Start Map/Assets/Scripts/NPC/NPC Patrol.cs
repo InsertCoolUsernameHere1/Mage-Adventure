@@ -33,7 +33,7 @@ public class NPCPatrol : MonoBehaviour
             return;
         }
         Vector3 direction = (target - transform.position).normalized;
-        rb.useGravity = false;
+        rb.useGravity = false; // HE CAN FLYYYYYYYYYYYY (not really but it would be cool 
         rb.linearVelocity = direction * speed;
         if (Vector3.Distance(transform.position, target) < .1f)
             StartCoroutine(SetPatrolPoint());
