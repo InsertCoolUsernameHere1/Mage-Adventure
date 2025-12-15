@@ -3,10 +3,11 @@ using UnityEngine;
 public class EnemyLogic : MonoBehaviour
 {
     public int health = 5;
+    public Spawner s;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        s = GameObject.FindGameObjectWithTag("Spawner").GetComponent<Spawner>();
     }
 
     // Update is called once per frame
@@ -14,6 +15,11 @@ public class EnemyLogic : MonoBehaviour
     {
         if (health <= 0)
         {
+            if(s != null)
+            {
+                s.currentSpawns = s.currentSpawns - 1;
+                s = null;
+            }
             Destroy(gameObject);
         }
 
