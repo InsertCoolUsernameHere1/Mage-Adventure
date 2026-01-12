@@ -32,7 +32,7 @@ public class Playerhealth : MonoBehaviour
         {
             if (other.gameObject.tag == "Sword")
             {
-                health = health - 2;  // Detects if an item with the tag "Sword is touching the players hitbox
+                health = health - 2;  // Detects if an item with the tag "Sword is touching the players hitbox and if so takes away 2 health from pool
             }
         }
     }

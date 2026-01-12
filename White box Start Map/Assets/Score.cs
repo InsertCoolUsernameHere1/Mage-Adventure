@@ -1,11 +1,11 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
-public class Deathscreen : MonoBehaviour
+
+public class Score : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    public void retryButton()
+    void Start()
     {
-        SceneManager.LoadScene("Tutorial");
+        
     }
 
     // Update is called once per frame
