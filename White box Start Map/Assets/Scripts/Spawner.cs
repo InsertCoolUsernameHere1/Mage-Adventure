@@ -19,15 +19,15 @@ public class Spawner : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void Update() 
     {
-        if (currentSpawns < maxSpawns)
+        if (currentSpawns < maxSpawns)  // Checks to see if a new enemy should be spawned in  or not
         {
-            if (delay > 0)
+            if (delay > 0)  // Adds a delay so that the enemies dont spawn all at once
             {
                 delay = delay * Time.deltaTime;
             }
-            else // whoever reads this is a really cool guy :) 
+            else 
             {
                 selectRandomSpawnPoint();
                 currentSpawns = currentSpawns + 1;
@@ -36,7 +36,7 @@ public class Spawner : MonoBehaviour
             }
         }
     }
-    private void selectRandomSpawnPoint()
+    private void selectRandomSpawnPoint() // Allows the enemy to pick a random point to spawn in 
     {
         float distanceX = transform.position.x - maxX.position.x;
         float distanceZ = transform.position.z - maxX.position.z;

@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class EnemyLogic : MonoBehaviour
 {
-    public int health = 5;
+    public int health = 3;
     public Spawner s;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()

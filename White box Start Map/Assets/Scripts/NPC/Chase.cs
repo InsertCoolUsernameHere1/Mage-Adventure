@@ -9,12 +9,7 @@ public class Chaser : MonoBehaviour
     public float speed = 20.0f;
     public float minDist = 1f;
     public Transform target;
-    public GameObject EnemyFireball;
-    public GameObject bulletObj;
-    public Transform spawnPoint;
-    public float enemySpeed;
-    [SerializeField] private float timer = 3;
-    private float bulletTime;
+    
 
     // Use this for initialization
     void Start()
@@ -27,7 +22,7 @@ public class Chaser : MonoBehaviour
             {
                 target = GameObject.FindWithTag("Player").GetComponent<Transform>();
 
-                ShootAtPlayer();
+                
             }
         }
     }
@@ -54,28 +49,6 @@ public class Chaser : MonoBehaviour
     {
         target = newTarget;
     }
-
-    void ShootAtPlayer()
-    {
-        bulletTime -= Time.deltaTime;
-
-        if (bulletTime > 0) return;
-        bulletTime = timer;
-        // HUH?????? ig this could work
-        GameObject bulletObj = Instantiate(EnemyFireball, spawnPoint.transform.position, spawnPoint.transform.rotation);
-        Rigidbody bulletRig = bulletObj.GetComponent<Rigidbody>();
-        bulletRig.AddForce(bulletRig.transform.forward * enemySpeed);
-        Destroy(bulletObj, 5f);
-    }
-
-
-        private void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject.tag =="Player")
-        {
-            Destroy(bulletObj);
-        }
-
-    }
+    
 }
 

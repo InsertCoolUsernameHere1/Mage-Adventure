@@ -26,7 +26,7 @@ public class Fireballshooting : MonoBehaviour
                 if (shootFireball == true)
                 {
                     Instantiate(Fireball, fireballSpawnPoint.transform.position, fireballSpawnPoint.transform.rotation);
-                    delay = 1.5f;
+                    delay = 1f;
                     shootFireball = false;
 
                 }
