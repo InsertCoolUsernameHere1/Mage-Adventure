@@ -9,6 +9,9 @@ public class Playerhealth : MonoBehaviour
     public Slider healthBar;
     public TMP_Text healthText;
     public int maxHealth = 10;
+    public StopWatch stopWatch;
+    private bool stopwatchActive;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -24,6 +27,7 @@ public class Playerhealth : MonoBehaviour
         {
             healthBar.gameObject.SetActive(false);
             Destroy(gameObject);
+            stopwatchActive = false;
             SceneManager.LoadScene("Death screen"); // Loads up the death screen
         }
     }
@@ -33,7 +37,7 @@ public class Playerhealth : MonoBehaviour
             if (other.gameObject.tag == "Sword")
             {
                 health = health - 2;  // Detects if an item with the tag "Sword is touching the players hitbox and if so takes away 2 health from pool
-            }
+            }   
         }
     }
 }

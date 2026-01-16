@@ -9,6 +9,7 @@ TagManager:
   - Ground
   - Spawner
   - Sword
+  - BigSword
   layers:
   - Default
   - TransparentFX
