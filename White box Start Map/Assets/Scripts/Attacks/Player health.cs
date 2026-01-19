@@ -11,6 +11,7 @@ public class Playerhealth : MonoBehaviour
     public int maxHealth = 10;
     public StopWatch stopWatch;
     private bool stopwatchActive;
+    private int healthPackValue = 5;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -21,6 +22,17 @@ public class Playerhealth : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (HealthPack.hasPickedUpHealthPack)
+        {
+
+            health = health + healthPackValue;
+            HealthPack.hasPickedUpHealthPack = false;
+
+            if (health > maxHealth)
+            {
+                health = maxHealth;
+            }
+        }
         healthText.text = health + " / " + maxHealth;
         healthBar.value = (float)health / (float)maxHealth; // Creates a percentage for the healthabr to use to see how much the bar should be filled
         if (health <= 0)
@@ -40,4 +52,5 @@ public class Playerhealth : MonoBehaviour
             }   
         }
     }
+    
 }
