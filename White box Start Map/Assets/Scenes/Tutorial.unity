@@ -11387,7 +11387,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnerGuy: {fileID: 723951325}
-  maxSpawns: 10
+  maxSpawns: 15
   currentSpawns: 0
   delay: 4
   maxX: {fileID: 960814520}

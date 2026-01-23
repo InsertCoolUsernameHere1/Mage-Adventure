@@ -1,8 +1,7 @@
 using UnityEngine;
 using System.Collections.Generic;
 using System.Collections;
-using UnityEditor.Experimental.GraphView;
-using System.Runtime.CompilerServices;
+
 
 public class NPCPatrol : MonoBehaviour
 {

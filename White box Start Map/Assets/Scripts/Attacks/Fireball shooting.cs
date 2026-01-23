@@ -25,8 +25,8 @@ public class Fireballshooting : MonoBehaviour
             {
                 if (shootFireball == true)
                 {
-                    Instantiate(Fireball, fireballSpawnPoint.transform.position, fireballSpawnPoint.transform.rotation);
-                    delay = 0.5f;
+                    Instantiate(Fireball, fireballSpawnPoint.transform.position, fireballSpawnPoint.transform.rotation);  
+                    delay = 0.5f;  // No you arent getting a fully automatic fireball launcher (has a .5 second delay per fireball)
                     shootFireball = false;
 
                 }

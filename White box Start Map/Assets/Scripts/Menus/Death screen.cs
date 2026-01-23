@@ -10,7 +10,7 @@ public class Deathscreen : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
      void Start()
     {
-        PlayerPrefs.GetFloat("finalTime");  // Maybe this time you did better? (displays highest time
+        PlayerPrefs.GetFloat("finalTime");  // Maybe this time you did better? (displays highest time)
         Cursor.visible = true;
     }
     public void retryButton()  // Try again.... and no skill issues this time  (restarts the game)
