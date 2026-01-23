@@ -1088,9 +1088,10 @@ GameObject:
   - component: {fileID: 1831449969}
   - component: {fileID: 1831449972}
   - component: {fileID: 1831449971}
+  - component: {fileID: 1831449973}
   - component: {fileID: 1831449970}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Quit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1159,7 +1160,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1831449971}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1831449973}
+        m_TargetAssemblyTypeName: Deathscreen, Assembly-CSharp
+        m_MethodName: quitButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1831449971
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1198,6 +1211,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1831449968}
   m_CullTransparentMesh: 1
+--- !u!114 &1831449973
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1831449968}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3054dcf68e01d5d44a4f079b8070c3b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stopWatch: {fileID: 0}
+  currentTimeText: 
+  Playerhealth: {fileID: 0}
 --- !u!1 &1859724372
 GameObject:
   m_ObjectHideFlags: 0

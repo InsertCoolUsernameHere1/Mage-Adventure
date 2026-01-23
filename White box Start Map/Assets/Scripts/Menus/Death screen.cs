@@ -18,7 +18,7 @@ public class Deathscreen : MonoBehaviour
         SceneManager.LoadScene("Tutorial");
     }
 
-    public void QuitButton()
+    public void quitButton()
     {
         Application.Quit();
     }
