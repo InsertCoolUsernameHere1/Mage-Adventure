@@ -31,7 +31,7 @@ public class Fireballlogic : MonoBehaviour
 
     IEnumerator DestroyCoroutine()
     {
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(4f);  // Fireball go boom after 4 seconds (destroys the fireball)
         Destroy(objectToDestroy);
     }
 
@@ -39,7 +39,7 @@ public class Fireballlogic : MonoBehaviour
     {
         if (other.gameObject.tag == "Enemy")
         {
-            EnemyL = other.gameObject.GetComponent<EnemyLogic>();
+            EnemyL = other.gameObject.GetComponent<EnemyLogic>(); // Fireball hurt enemy and do 1 damage
             EnemyL.health = EnemyL.health - 1;
             Destroy(gameObject);
         }

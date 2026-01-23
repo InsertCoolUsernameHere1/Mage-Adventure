@@ -2437,8 +2437,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.5544633, y: 2.1109548, z: 6.02688}
-  m_Center: {x: 0.051969774, y: 0.5397419, z: 0.056218192}
+  m_Size: {x: 1.7841998, y: 4.053383, z: 6.02688}
+  m_Center: {x: 0.16652706, y: 1.4691857, z: 0.056451738}
 --- !u!64 &62275505
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -30267,6 +30267,10 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 2057703489235366212, guid: 61c585cdd0ace764394fc8d092de5365, type: 3}
+      propertyPath: minDist
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 3909912191454808888, guid: 61c585cdd0ace764394fc8d092de5365, type: 3}
       propertyPath: m_Name
       value: Chaser
@@ -38275,7 +38279,23 @@ PrefabInstance:
       objectReference: {fileID: 795360821}
     - target: {fileID: 396876600691054572, guid: ad4430a4b9d4cb540828599244df1411, type: 3}
       propertyPath: m_VersionIndex
-      value: 83
+      value: 92
+      objectReference: {fileID: 0}
+    - target: {fileID: 839748769071694246, guid: ad4430a4b9d4cb540828599244df1411, type: 3}
+      propertyPath: m_Size.x
+      value: 4.9478536
+      objectReference: {fileID: 0}
+    - target: {fileID: 839748769071694246, guid: ad4430a4b9d4cb540828599244df1411, type: 3}
+      propertyPath: m_Size.z
+      value: 5.4513516
+      objectReference: {fileID: 0}
+    - target: {fileID: 839748769071694246, guid: ad4430a4b9d4cb540828599244df1411, type: 3}
+      propertyPath: m_Center.x
+      value: -0.17860338
+      objectReference: {fileID: 0}
+    - target: {fileID: 839748769071694246, guid: ad4430a4b9d4cb540828599244df1411, type: 3}
+      propertyPath: m_Center.z
+      value: 0.6655203
       objectReference: {fileID: 0}
     - target: {fileID: 2363450845801601389, guid: ad4430a4b9d4cb540828599244df1411, type: 3}
       propertyPath: coyoteTimeEnabled
@@ -38303,7 +38323,7 @@ PrefabInstance:
       objectReference: {fileID: 565532866}
     - target: {fileID: 7077583784502505653, guid: ad4430a4b9d4cb540828599244df1411, type: 3}
       propertyPath: m_VersionIndex
-      value: 83
+      value: 92
       objectReference: {fileID: 0}
     - target: {fileID: 8157446608739899368, guid: ad4430a4b9d4cb540828599244df1411, type: 3}
       propertyPath: m_Name

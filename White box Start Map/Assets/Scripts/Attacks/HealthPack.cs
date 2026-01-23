@@ -12,7 +12,7 @@ public class HealthPack : MonoBehaviour
         {
             if (Input.GetKey(KeyCode.E))
             {
-                hasPickedUpHealthPack = true;
+                hasPickedUpHealthPack = true;  
                 hasEnteredTrigger = false;
                 gameObject.SetActive(false);
                 useText.SetActive(false);
@@ -22,13 +22,13 @@ public class HealthPack : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        useText.SetActive(true);
+        useText.SetActive(true);  // Player go close to health pack. GET THE CANVAS OUT!!!!
         hasEnteredTrigger = true;
     }
 
     private void OnTriggerExit(Collider other)
     {
-        useText.SetActive(false);
+        useText.SetActive(false); // Oh... the player left. Now get rid of the canvas (and maybe cry)
         hasEnteredTrigger = false;
         hasPickedUpHealthPack = false;
     }

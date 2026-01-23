@@ -13,7 +13,7 @@ public class EnemyLogic : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (health <= 0)
+        if (health <= 0)  // Tell script when the enemy is dead 
         {
             if(s != null)
             {

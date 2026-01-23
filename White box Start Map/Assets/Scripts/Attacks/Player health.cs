@@ -36,7 +36,7 @@ public class Playerhealth : MonoBehaviour
 
             if (health > maxHealth)
             {
-                health = maxHealth;
+                health = maxHealth;  // Player has alot of health and cant get more 
             }
         }
 
@@ -46,7 +46,7 @@ public class Playerhealth : MonoBehaviour
         {
             finalTime = stopWatch.currentTimeText.ToString();
             healthBar.gameObject.SetActive(false);
-            Destroy(gameObject);
+            Destroy(gameObject);  // Player is now..... unalived
             stopwatchActive = false;
             PlayerPrefs.SetString(currentTime, finalTime);
             PlayerPrefs.Save();
