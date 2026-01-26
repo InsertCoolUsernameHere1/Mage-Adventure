@@ -12,6 +12,7 @@ public class Deathscreen : MonoBehaviour
     {
         PlayerPrefs.GetFloat("finalTime");  // Maybe this time you did better? (displays highest time)
         Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.Confined;
     }
     public void retryButton()  // Try again.... and no skill issues this time  (restarts the game)
     {
